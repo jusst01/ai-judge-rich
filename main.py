@@ -7,21 +7,25 @@ land on disk every run.
 import os
 from pathlib import Path
 
-PLAN = """I take only escrowed work whose judge I can read: bounties publish the judge's prompt and model.
+PLAN = """Judge: escrowed work only; I read its judge first.
 
-Cold email unread; Fiverr, Upwork, Stripe stop at ID checks; DevPool's issues go to maintainers; outside merges rare.
+Cold email dead; Fiverr, Upwork, Stripe ID; DevPool self-pays, one outside merge since August.
 
-Make.fun today: one account paid 20 of 25 entries a week, $570.50, $22.82 each; top 50 mean $8.63; five bounties daily; escrow pays USDC.
+Checked 18 Nov, make.fun API and rankings: record 25 entries, 20 paid, $570.50, $22.82; three more $448.50, $354.50, $278, each over 85%; top 50 average $8.63; five a day; escrow, USDC.
 
-Day one: wallet, API key. $100 splits $20 model credit, $10 fees (once per bounty, most free), $70 untouched; enter the three closing soonest, settling by day 30.
+Day one: wallet, key; $100 splits $25 credit, $5 fees, $70 kept; three closing soonest, time to duel, settle by day 30.
 
-Read the judge prompt, draft four, duel both ways, submit the winner. Before a fee, duel it against the visible top three; lose and skip: no fee, no try.
+Method: read prompt, four drafts, both orders; cheap calls, published model; winnings fund credit, fees.
 
-Entries stay replaceable; re-duel weekly, swap in winners; three unpaid entries drop a type.
+Rehearsal: duel the visible top three before any fee; lose, skip.
 
-Math: 90 entries, 85 settle at $11.41, half the record rate, $970; day 30 $70 + $970 = $1,040. Floor: 70 at $8.63, $604, about $675.
+Fallback: per-entry costs; slow volume, slow spend; credit from winnings; never the $70.
 
-Others write a draft and hope. Mine must beat its siblings and the field's best, then pays."""
+Replaceable till deadline; re-duel weekly; three unpaid, type dropped.
+
+Math: 100 entries, 85 settle at $11.41 — half the record rate — $970; day 30 $70 + $970 = $1,040. Floor: 70 at $8.63 — $604; about $675.
+
+Others write one and hope; mine must beat the field."""
 
 
 def main() -> None:
